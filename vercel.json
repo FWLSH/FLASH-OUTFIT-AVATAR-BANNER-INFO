@@ -1,9 +1,9 @@
 {
   "builds": [
-    { "src": "Flash.py", "use": "@vercel/python" }
+    { "src": "app.py", "use": "@vercel/python" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "Flash.py" }
+    { "src": "/(.*)", "dest": "app.py" }
   ],
   "regions": ["sin1"]
 }
