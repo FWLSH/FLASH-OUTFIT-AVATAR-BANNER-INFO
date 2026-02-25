@@ -176,17 +176,21 @@ def format_response(data):
     }
 
 # === API Routes ===
-@app.route('/get_player_personal_show')
+@app.route('/get')
 async def get_account_info():
     uid = request.args.get('uid')
     if not uid:
         return jsonify({"error": "Please provide UID."}), 400
     
     try:
-        region = "IND"
+        # Always use ME region
+        region = "ME"
+        
+        # Get account information
         return_data = await GetAccountInformation(uid, "7", region, "/GetPlayerPersonalShow")
         formatted = format_response(return_data)
         return jsonify(formatted), 200
+    
     except Exception as e:
         return jsonify({"error": "Invalid UID or server error. Please try again."}), 500
 
