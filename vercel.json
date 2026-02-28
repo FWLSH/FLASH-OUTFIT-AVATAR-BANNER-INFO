@@ -3,7 +3,7 @@
     { "src": "Flash.py", "use": "@vercel/python" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "Flash.py" }
+    { "src": "/(.*)", "dest": "lash.py" }
   ],
   "regions": ["sin1"]
 }
