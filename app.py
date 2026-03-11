@@ -304,7 +304,7 @@ def get_info():
     return jsonify(player_data)
 
 # ================== OUTFIT IMAGE ROUTE ==================
-@app.route('/outfit-image', methods=['GET'])
+@app.route('/outfit', methods=['GET'])
 def outfit_image():
     uid = request.args.get('uid')
     region = request.args.get('region')  # Mandatory now
