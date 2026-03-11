@@ -54,11 +54,11 @@ def get_account_credentials(region: str) -> str:
     if r == "ME":
         return "uid=4612964480&password=FLASH_TR_3HP6EGVUJ"
     elif r == "BD":
-        return "uid=4612988977&password=FLASH_TR_TCQZ6EVSZ"
+        return "uid=4626850796&password=FLASH_TR_LQQRQCTWR"
     elif r in {"BR", "US", "SAC", "ME"}:
         return "uid=4612968156&password=FLASH_TR_MZRVWF07I"
     else:
-        return "uid=3301239795&password=DD40EE772FCBD61409BB15033E3DE1B1C54EDA83B75DF0CDD24C34C7C8798475"
+        return "uid=4626850796&password=FLASH_TR_LQQRQCTWR"
 
 # === Token Generation ===
 async def get_access_token(account: str):
