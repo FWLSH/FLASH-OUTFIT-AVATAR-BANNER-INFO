@@ -20,7 +20,7 @@ def fetch_player_info(uid: str, region: str):
     if not uid or not region:
         return None
     
-    player_info_url = f"https://flash-player-info.vercel.app/info?uid={uid}&key=Flash&region={region}"
+    player_info_url = f"https://flash-player-info.vercel.app/info?uid={uid}&key=Flash2hour"
     
     try:
         resp = session.get(player_info_url, timeout=IMAGE_TIMEOUT)
